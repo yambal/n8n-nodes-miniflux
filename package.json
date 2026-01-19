@@ -1,5 +1,5 @@
 {
-  "name": "@yambal/n8n-nodes-miniflux",
+  "name": "@jnymmt/n8n-nodes-miniflux",
   "version": "0.1.0",
   "description": "n8n node for Miniflux RSS reader",
   "keywords": [

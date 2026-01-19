@@ -1,4 +1,4 @@
-# @yambal/n8n-nodes-miniflux
+# @jnymmt/n8n-nodes-miniflux
 
 n8n community node for [Miniflux](https://miniflux.app/) RSS reader.
 
@@ -10,14 +10,14 @@ n8n community node for [Miniflux](https://miniflux.app/) RSS reader.
 
 1. Go to **Settings > Community Nodes**
 2. Select **Install**
-3. Enter `@yambal/n8n-nodes-miniflux` and agree to the risks
+3. Enter `@jnymmt/n8n-nodes-miniflux` and agree to the risks
 4. Select **Install**
 
 ### Manual Installation
 
 ```bash
 cd ~/.n8n/nodes
-npm install @yambal/n8n-nodes-miniflux
+npm install @jnymmt/n8n-nodes-miniflux
 ```
 
 ## Prerequisites
