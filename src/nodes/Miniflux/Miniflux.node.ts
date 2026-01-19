@@ -483,10 +483,14 @@ export class Miniflux implements INodeType {
 						const entryId = this.getNodeParameter('entryId', i) as number;
 						const newStatus = this.getNodeParameter('newStatus', i) as string;
 
-						response = await fetch(`${baseUrl}/v1/entries/${entryId}`, {
+						// Miniflux API: PUT /v1/entries with entry_ids array
+						response = await fetch(`${baseUrl}/v1/entries`, {
 							method: 'PUT',
 							headers,
-							body: JSON.stringify({ status: newStatus }),
+							body: JSON.stringify({
+								entry_ids: [entryId],
+								status: newStatus,
+							}),
 						});
 
 						if (!response.ok) {
